@@ -13,6 +13,7 @@ import BillingScreen from '../screens/BillingScreen';
 import DPDPScreen from '../screens/DPDPScreen';
 import SupportScreen from '../screens/SupportScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import ChatScreen from '../screens/ChatScreen';  // ← NEW
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -40,6 +41,8 @@ function TabNavigator() {
         options={{ tabBarIcon: ({ color }) => <Icon name="view-dashboard-outline" size={24} color={color} /> }} />
       <Tab.Screen name="VMs" component={VMsScreen}
         options={{ tabBarIcon: ({ color }) => <Icon name="server-outline" size={24} color={color} /> }} />
+      <Tab.Screen name="AI Chat" component={ChatScreen}
+        options={{ tabBarIcon: ({ color }) => <Icon name="robot-outline" size={24} color={color} /> }} />
       <Tab.Screen name="Billing" component={BillingScreen}
         options={{ tabBarIcon: ({ color }) => <Icon name="receipt" size={24} color={color} /> }} />
       <Tab.Screen name="DPDP" component={DPDPScreen}

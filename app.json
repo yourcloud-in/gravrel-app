@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "GravRel",
+    "slug": "gravrel-app",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "platforms": ["android", "ios"],
+    "backgroundColor": "#0A1628"
+  }
+}
